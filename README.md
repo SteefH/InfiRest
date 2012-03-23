@@ -19,7 +19,7 @@ Dependencies
 How this came to be
 ===================
 
-Every year, my employer [Infi](http://infi.nl/) offers its individual
+Every year, my employer [Infi](http://infi.nl/) gives its individual
 employees one week to work on a project of their own choice, the so-called hobby
 week. InfiRest was my hobby week project for 2012.
 
@@ -30,7 +30,8 @@ with [django-tastypie](https://github.com/toastdriven/django-tastypie) serving
 as the backend REST interface. Tastypie's ease of use inspired me to create a
 similar library for Zend Framework, because we use that framework a lot in our
 projects, and there is no extensive REST support in the Zend Framework core
-library.
+library. I like to build stuff that simply works, and I hope that this will be
+one of those things.
 
 Work in progress
 ================
@@ -40,3 +41,9 @@ the hobby week was to have a straightforward working version with a REST-to-ORM
 feature. Consequences are, among others, that the configurability of
 the library could be a bit less limited. I plan to keep working on InfiRest to 
 make it more mature, and ultimately, production ready.
+
+Acknowledgements
+================
+* Infi for offering the time for this project.
+* The authors and contributers of django-tastypie for making that great
+  django app.
