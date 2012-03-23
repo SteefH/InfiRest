@@ -2,6 +2,7 @@ TODO's
 ======
 
 * First and foremost: **documentation!**
+* Example application, probably in another repo
 * Authentication/authorization
   * Zend_Auth and Zend_Acl integration
 * Result list filtering
