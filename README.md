@@ -14,7 +14,7 @@ Dependencies
 * PHP 5.3
 * Zend Framework 1.11+ (might work with earlier versions).
 * [Doctrine 2](http://www.doctrine-project.org/), in case you want to use
-  InfiRestDoctrine,.
+  InfiRestDoctrine.
 
 How this came to be
 -------------------
