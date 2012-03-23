@@ -46,5 +46,5 @@ Acknowledgements
 ----------------
 
 * Infi for offering the time for this project.
-* The authors and contributers of django-tastypie for making that great
+* The authors and contributors of django-tastypie for making that great
   django app.
