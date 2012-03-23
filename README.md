@@ -18,7 +18,7 @@ Dependencies
 How this came to be
 ===================
 
-Every year, my employer [Infi b.v.](http://infi.nl/) offers its individual
+Every year, my employer [Infi](http://infi.nl/) offers its individual
 employees one week to work on a project of their own choice, the so-called hobby
 week. InfiRest was my hobby week project for 2012.
 
