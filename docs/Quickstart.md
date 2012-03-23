@@ -31,7 +31,10 @@ application, and want to expose two endpoints at `api/v1/blog-post/` and
 	resources.infirest.default.endpoints.user     = "user"
 
 The `default` part of the configuration keys determine the name of the REST
-interface. For each of the `resources.infirest.[interfaceName].endpoints.[endpointName]`
+interface. A rest interface is tied to a module in your ZF application, in this
+case it's the default module.
+
+For each of the `resources.infirest.[interfaceName].endpoints.[endpointName]`
 configuration keys, the actual `[endpointName]` part is ignored, and only the
 configuration value (eg. `"blog-post"`) is used.
 
