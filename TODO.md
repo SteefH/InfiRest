@@ -11,3 +11,4 @@ TODO's
 * Deleting lists, aka handling DELETE requests on list endpoints
 * PATCH request handling
 * XML POST/PUT payload deserialization
+* Custom endpoint URLs
