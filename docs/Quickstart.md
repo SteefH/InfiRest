@@ -144,6 +144,8 @@ extends InfiRestDoctrine_Endpoint {
 ```
 
 ```php
+<?php
+
 class UserEndpoint extends BaseEndpoint {
 	/**
 	 * The Doctrine 2 Entity class this endpoint exposes
@@ -154,6 +156,8 @@ class UserEndpoint extends BaseEndpoint {
 ```
 
 ```php
+<?php
+
 class BlogPostEndPoint extends BaseEndpoint {
 	/**
 	 * The Doctrine 2 Entity class this endpoint exposes
