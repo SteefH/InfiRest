@@ -87,16 +87,6 @@ extends InfiRestDoctrine_Endpoint {
 		return $entityManager;
 	}
 
-	/**
-	 * Get an array of fields that should be excluded by the endpoint.
-	 * 
-	 * For instance, hiding password fields in your API is a pretty sane
-	 * thing to do...
-	 */
-	protected function _getExcludes() {
-		// No fields are excluded by this endpoint
-		return array(); 
-	}
 }
 ```
 
@@ -117,6 +107,16 @@ extends InfiRestDoctrine_Endpoint {
 	public function getEntityManager() {
 		$entityManager = ... // eg. get it from the Zend_Registry
 		return $entityManager;
+	}
+
+	/**
+	 * Get an array of fields that should be excluded by the endpoint.
+	 * 
+	 * For instance, hiding password fields in your API is a pretty sane
+	 * thing to do...
+	 */
+	protected function _getExcludes() {
+		return array('password'); 
 	}
 
 }
@@ -146,11 +146,11 @@ extends InfiRestDoctrine_Endpoint {
 ```php
 <?php
 
-class UserEndpoint extends BaseEndpoint {
+class BlogPostEndPoint extends BaseEndpoint {
 	/**
 	 * The Doctrine 2 Entity class this endpoint exposes
 	 */
-	protected $_objectClass = 'ExampleApp\Orm\Entities\User';
+	protected $_objectClass = 'ExampleApp\Orm\Entities\BlogPost';
 
 }
 ```
@@ -158,11 +158,21 @@ class UserEndpoint extends BaseEndpoint {
 ```php
 <?php
 
-class BlogPostEndPoint extends BaseEndpoint {
+class UserEndpoint extends BaseEndpoint {
 	/**
 	 * The Doctrine 2 Entity class this endpoint exposes
 	 */
-	protected $_objectClass = 'ExampleApp\Orm\Entities\BlogPost';
+	protected $_objectClass = 'ExampleApp\Orm\Entities\User';
+
+	/**
+	 * Get an array of fields that should be excluded by the endpoint.
+	 * 
+	 * For instance, not exposing passwords through your API is a pretty sane
+	 * thing to do...
+	 */
+	protected function _getExcludes() {
+		return array('password');
+	}
 
 }
 ```
