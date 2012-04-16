@@ -120,8 +120,8 @@ extends InfiRest_Endpoint_Abstract
 					$unique = true;
 					$nullable = true;
 					foreach ($mapping['joinColumns'] as $column) {
-						$unique = $unique && $column['unique'];
-						$nullable = $nullable && $column['nullable'];
+						$unique = $unique && array_key_exists('unique', $column) && $column['unique'];
+						$nullable = $nullable && array_key_exists('nullable', $column) &&  $column['nullable'];
 					}
 					$fieldObj = new InfiRest_Endpoint_Field_Association_ToOne(
 						$endpoint,

@@ -311,8 +311,8 @@ extends Zend_Controller_Action
 		$result = array();
 		$urlHelper = $this->_helper->url;
 		$apiName = $api->getName();
-		$listFmt = sprintf('easy-rest-list-%s-%%s', $apiName);
-		$schemaFmt = sprintf('easy-rest-schema-%s-%%s', $apiName);
+		$listFmt = sprintf('infi-rest-list-%s-%%s', $apiName);
+		$schemaFmt = sprintf('infi-rest-schema-%s-%%s', $apiName);
 		foreach ($api->getEndpoints() as $endpointName) {
 			$urlParams = array('endpoint' => $endpointName);
 			$result[$endpointName] = array(
